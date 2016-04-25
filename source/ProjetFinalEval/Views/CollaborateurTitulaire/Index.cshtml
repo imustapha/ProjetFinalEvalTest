@@ -1,0 +1,110 @@
+﻿@model IEnumerable<ProjetFinalEval.collaborateurtitulaire>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutStablePage1.cshtml";
+}
+
+<div class="page-bar">
+    <ul class="page-breadcrumb">
+        <li>
+            <i class="fa fa-home"></i>
+            <a href="~/ConllaborateurTitulaire/Index">Liste des Collaborateur Titulaires</a>
+            <i class="fa fa-angle-right"></i>
+
+        </li>
+
+    </ul>
+
+</div>
+
+<div class="col-md-12">
+    <!-- BEGIN SAMPLE TABLE PORTLET-->
+    <div class="portlet box blue">
+
+        <div class="portlet-title">
+            <div class="caption">
+                <i class="fa fa-cogs"></i>Simple Table
+            </div>
+            <div class="tools">
+                <a href="javascript:;" class="collapse">
+                </a>
+                <a href="#portlet-config" data-toggle="modal" class="config">
+                </a>
+                <a href="javascript:;" class="reload">
+                </a>
+                <a href="javascript:;" class="remove">
+                </a>
+            </div>
+        </div>
+        <div class="portlet-body">
+            <div class="clearfix">
+
+                <a href="@Url.Action("Create")" class="btn btn-primary">Create</a>
+
+            </div>
+            <div class="table-scrollable">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>
+                                Name
+                            </th>
+                            <th>
+                                Prenom
+                            </th>
+                            <th>
+                                Email
+                            </th>
+
+
+                            <th>
+                                Fonction
+
+                            </th>
+                            <th>
+                                <center> Evaluateur</center>
+                            </th>
+                            <th></th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.NOM)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.PRENOM)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.EMAIL)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.fonction.NOMFONCTION)
+                                </td>
+                                <td>
+                                    <center>@Html.DisplayFor(modelItem => item.FLAGEVAL)</center>
+                                </td>
+                                <td></td>
+                                <td>
+
+                                    <div class="btn-group btn-group-circle btn-group-solid">
+
+                                        @Html.ActionLink("Edit", "Edit", "CollaborateurTitulaire", new { id = item.IDCOLLABORATEURTITULAIRE }, new { @class = "btn red" })
+                                        @Html.ActionLink("Details", "Details", "CollaborateurTitulaire", new { id = item.IDCOLLABORATEURTITULAIRE }, new { @class = "btn yellow" })
+                                        @Html.ActionLink("Delete", "Delete", "CollaborateurTitulaire", new { id = item.IDCOLLABORATEURTITULAIRE }, new { @class = "btn green" })
+
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- END SAMPLE TABLE PORTLET-->
+</div>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c221b0009c804818acf6fa79a60229de" Name="Diagram1">
+        <EntityTypeShape EntityType="bd_evaluationModel.client" Width="1.5" PointX="6" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_evaluationModel.collaborateurpe" Width="1.5" PointX="3" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_evaluationModel.collaborateurtitulaire" Width="1.5" PointX="3" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_evaluationModel.critere" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_evaluationModel.evaluation" Width="1.5" PointX="5.25" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_evaluationModel.famillecritere" Width="1.5" PointX="0.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_evaluationModel.fonction" Width="1.5" PointX="0.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_evaluationModel.freelance" Width="1.5" PointX="8.75" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_evaluationModel.projet" Width="1.5" PointX="8.25" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_evaluationModel.tache" Width="1.5" PointX="10.5" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_evaluationModel.variable" Width="1.5" PointX="5.25" PointY="12.375" IsExpanded="true" />
+        <AssociationConnector Association="bd_evaluationModel.FK_APPARTENIR" ManuallyRouted="false" />
+        <AssociationConnector Association="bd_evaluationModel.FK_EVALUER" ManuallyRouted="false" />
+        <AssociationConnector Association="bd_evaluationModel.FK_OBTENIR" ManuallyRouted="false" />
+        <AssociationConnector Association="bd_evaluationModel.FK_ADMINISTRER" ManuallyRouted="false" />
+        <AssociationConnector Association="bd_evaluationModel.FK_AVOIR" ManuallyRouted="false" />
+        <AssociationConnector Association="bd_evaluationModel.FK_EXAMINER" ManuallyRouted="false" />
+        <AssociationConnector Association="bd_evaluationModel.FK_MANIER" ManuallyRouted="false" />
+        <AssociationConnector Association="bd_evaluationModel.FK_POSSEDER" ManuallyRouted="false" />
+        <AssociationConnector Association="bd_evaluationModel.FK_CARACTERISER" ManuallyRouted="false" />
+        <AssociationConnector Association="bd_evaluationModel.FK_SELECTIONNER" ManuallyRouted="false" />
+        <AssociationConnector Association="bd_evaluationModel.FK_CONTIENT" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
